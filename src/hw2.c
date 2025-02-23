@@ -61,51 +61,51 @@ uint8_t rotl(uint8_t x, uint8_t shamt)
 {
 	(void) x;
 	(void) shamt;
-    return NULL;
+    return 0;
 }
 
 uint8_t rotr(uint8_t x, uint8_t shamt)
 {
 	(void) x;
 	(void) shamt;
-    return NULL;
+    return 0;
 }
 
 block_t reverse(block_t x)
 {
 	(void) x;
-    return NULL;
+    return 0;
 }
 
 block_t shuffle4(block_t x)
 {
 	(void) x;
-    return NULL;
+    return 0;
 }
 
 block_t unshuffle4(block_t x)
 {
 	(void) x;
-    return NULL;
+    return 0;
 }
 
 block_t shuffle1(block_t x)
 {
 	(void) x;
-    return NULL;
+    return 0;
 }
 
 block_t unshuffle1(block_t x)
 {
 	(void) x;
-    return NULL;
+    return 0;
 }
 
 uint8_t nth_byte(block_t x, uint8_t n)
 {
 	(void) x;
 	(void) N;
-    return NULL;
+    return 0;
 }
 
 // ----------------- Encryption Functions ----------------- //
@@ -122,14 +122,14 @@ block_t scramble(block_t x, block_t *keys, uint32_t round, permute_func_t op)
 	(void) keys;
 	(void) round;
 	(void) op;
-    return NULL;
+    return 0;
 }
 
 block_t mash(block_t x, block_t *keys)
 {
 	(void) x;
 	(void) keys;
-    return NULL;
+    return 0;
 }
 
 block_t sbu_encrypt_block(block_t plain_text, block_t *expanded_keys)
@@ -137,7 +137,7 @@ block_t sbu_encrypt_block(block_t plain_text, block_t *expanded_keys)
 	(void) plain_text;
 	(void) expanded_keys;
 
-    return NULL;
+    return 0;
 }
 
 block_t r_scramble(block_t x, block_t *keys, uint32_t round, permute_func_t op)
@@ -147,21 +147,21 @@ block_t r_scramble(block_t x, block_t *keys, uint32_t round, permute_func_t op)
 	(void) round;
 	(void) op;
 
-    return NULL;
+    return 0;
 }
 
 block_t r_mash(block_t x, block_t *keys)
 {
 	(void) x;
 	(void) keys;
-	return NULL;
+	return 0;
 }
 
 block_t sbu_decrypt_block(block_t cipher_text, block_t *expanded_keys)
 {
 	(void) cipher_text;
 	(void) expanded_keys;
-	return NULL;
+	return 0;
 }
 
 void sbu_encrypt(uint8_t *plaintext_input, block_t *encrypted_output, size_t pt_len, uint32_t *expanded_keys)
