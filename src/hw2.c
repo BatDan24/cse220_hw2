@@ -104,7 +104,7 @@ block_t unshuffle1(block_t x)
 uint8_t nth_byte(block_t x, uint8_t n)
 {
 	(void) x;
-	(void) N;
+	(void) n;
     return 0;
 }
 
