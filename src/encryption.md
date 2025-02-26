@@ -58,8 +58,8 @@ Let `S` be the key schedule. Let `B` be the input block.
 
 ### Bit Operations
 
-1. 32-bit bitwise rotate left `rotl(x, shamt)`
-    - Shifts 32-bits `x` left by `shamt` and wrap the bits that "fall off" the left end back around to the right. 
+1. 8-bit bitwise rotate left `rotl(x, shamt)`
+    - Shifts 8-bits `x` left by `shamt` and wrap the bits that "fall off" the left end back around to the right. 
     - For example, 8-bit rotate `0b10110010` left by `3` is `0b10010101`
 2. 32-bit reverse `reverse(x)`
     - Reverses the bit order of `x`
@@ -147,8 +147,8 @@ Let `S` be the key schedule. Let `B` be the input block.
 
 ### Bit Operations
 
-1. 32-bit bitwise rotate right `rotr(x, shamt)`
-    - Shifts 32-bits `x` right by `shamt` and wrap the bits that "fall off" the right end back around to the left. 
+1. 8-bit bitwise rotate right `rotr(x, shamt)`
+    - Shifts 8-bits `x` right by `shamt` and wrap the bits that "fall off" the right end back around to the left. 
     - For example, 8-bit rotate `0b10110010` right by `3` is `0b01010110`
 2. 32-bit un-interleave every four bits `unshuffle4(x)`
     - Inverse operation of `shuffle4`.
